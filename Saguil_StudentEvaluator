@@ -1,0 +1,50 @@
+# AUTHOR: Gileana Hannah G. Saguil
+# Hands-on activity: Student Performance Evaluator
+def display_header():
+    header = "Student Performance Evaluator"
+    print(header)
+
+display_header()
+
+def display_name():
+
+    name=input("Enter Student Name: ")
+
+display_name() #This is a local variable
+def display_score1():
+    score1=int(input("Enter Assessment 1: "))
+
+display_score1()
+
+def display_score2():#This is a local variable because it is inside the def function
+    score2=int(input("Enter Assessment 2: "))
+
+display_score2()
+def display_score3():
+    score3=int(input("Enter Assessment 3: "))
+
+display_score3()
+
+def display_average(score1,score2, score3): #this is a global variable since it is ouside the code
+    average = score1 + score2 + score3 /3
+    print(f"Average score: {average}2f:.")
+
+    if 100<= average >=90:
+        print("Performance level: Outstanding")
+    if 90< average >=85:
+        print("Performance level: Very Satisfactory")
+    if 85< average >=80:
+        print("Performance level: Satisfactory")
+    if 80< average >=75:
+        print("Performance level: Fairly Satisfactory")
+    else:
+        print("Performance level: Needs Improvement")
+
+
+        print("STUDENT PERFORMANCE EVALUATOR")
+        print(f"Student Name: {name} ")
+        print("Enter Assessment 1: ")
+        print("Enter Assessment 2: ")
+        print("Enter Assessment 3: ")
+        print(f"Average score: {average}2f:. ")
+
